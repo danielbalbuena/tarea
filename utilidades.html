@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UTILIDADES DE LA GRID de Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="BOOTSTRAP5/css/bootstrap.min.css">
+
+	<style type="text/css">
+
+		body
+		{
+			background: #17202A;
+			border: 5px solid white;
+			color: white;
+			border-radius: 200px;
+		}
+		
+		.row
+		{
+			background: #212F3D ;
+			margin-top:20px ;
+			margin-bottom: 20px;
+			color: white;
+			border: 2px solid black;
+			border-radius: 10px;
+
+		}
+
+		.columnas
+		{
+			background: #212F3C ;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid white;
+			border-radius:10px ;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h3>ordenar columnas con order-1 al order-5</h3>
+		<div class="row">
+			<div class="col columnas order-4 order-md-1 order-xxl-4">columna 1</div>
+			<div class="col columnas order-3 order-md-2 order-xxl-3">columna 2</div>
+			<div class="col columnas order-2 order-md-3 order-xxl-2">columna 3</div>
+			<div class="col columnas order-1 order-md-4 order-xxl-1">columna 4</div>
+		</div>
+			<h3>ordenar columnas con order-last al order-first</h3>
+<div class="row">
+			<div class="col columnas  order-last">columna 1</div>
+			<div class="col columnas  order-first">columna 2</div>
+			<div class="col columnas  ">columna 3</div>
+			<div class="col columnas  ">columna 4</div>
+		</div>
+			<h3>ordenar columnas con offset</h3>
+		<div class="row">
+			<div class="columnas col-3">columna 4</div>
+		</div>
+			<h3>ordenar columnas con offset</h3>
+			<p>con offset cuantas columnas a la derecha se va a posicionar el elemento al que se le agrega la clase</p>
+		<div class="row">
+			<div class="columnas col-3 offset-3">columna 1</div>
+		</div>
+		<div class="row">
+			<div class="columnas col-3 offset-6">columna 2</div>
+		</div>
+		<div class="row">
+			<div class="columnas col-3 offset-9">columna 3</div>
+		</div>
+	</div>
+
+</body>
+</html>
